@@ -9,8 +9,8 @@
 
 int main(int argc, char* argv[]) {
   std::vector<std::string> arguments{argv, argv + argc};
-  if (arguments.size() <= 1) {
-    std::cout << "error. you must suppy at least one number\n";
+  if (argument.size < 1) {
+    std::cout << "error: you must suppy at least one number\n";
     return 1;
   }
   double sum = 00;
