@@ -1,4 +1,7 @@
-// TODO: Add the required header
+// Luna Galvan
+// Lulegalvan@csu.fullerton.edu
+// @lunagalvan
+// Partners: @lunagalvan
 
 #include <iostream>
 #include <string>
@@ -7,8 +10,17 @@
 int main(int argc, char* argv[]) {
   std::vector<std::string> arguments{argv, argv + argc};
 
-  // TODO: Validate that there is at least one command line argument.
-  // If not, print an error message and return a non-zero value.
+  if (arguments.size() <= 1) {
+    std::cout << "error. you must suppy at least one number\n";
+    return 1;
+  }
+  double sum = 00;
+  for (int i = 1; i < argc; ++i) {
+    sum += std::stod(arguments[i]);
+  }
+  double average = sum / (argc - 1);
+  std::cout << "average = " << average << std::endl;
+
 
   // TODO: Write a for-each loop to sum (add up) all of the command line
   // arguments.
