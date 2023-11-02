@@ -9,7 +9,7 @@
 
 int main(int argc, char* argv[]) {
   std::vector<std::string> arguments{argv, argv + argc};
-  if (argument.size < 1) {
+  if (argument.size() <= 1) {
     std::cout << "error: you must suppy at least one number\n";
     return 1;
   }
